@@ -9,9 +9,9 @@ Detecting Windows OS version (including Win 10)
 **C++**: `wclWinVer wclGetWinVer(unsigned short& Build);`
 
 Returns current OS version.
-On output, the "Build" parameter contains the OS build number.
+On output, the *Build* parameter contains the OS build number.
 
-For Windows 10 (returning value is verWin10) the Build number can be converted to Release number using table below:
+For Windows 10 (returning value is *verWin10*) the Build number can be converted to Release number using table below:
 
 | Build | Release |
 | ----- | ------- |
@@ -28,7 +28,7 @@ But some articles usualy references to Release. So it can be useful to convert W
 
 ## wclIsWinIot()
 
-Checks if  runs on Windows 10 IoT.
+Checks if runs on Windows 10 IoT.
 
 **Delphi** `function wclIsWinIot: Boolean;`
 
@@ -36,5 +36,5 @@ Checks if  runs on Windows 10 IoT.
 
 **C++**: `bool wclIsWinIot();`
 
-Returns "True" if the OS is Windows 10 IoT. To get more detailed information about OS version (OS Build number)
-use wclGetWinVer() function.
+Returns *True* if the OS is Windows 10 IoT. To get more detailed information about OS version (OS Build number)
+use **wclGetWinVer()** function.
